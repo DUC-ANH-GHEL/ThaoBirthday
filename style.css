@@ -91,7 +91,7 @@
     width: 194px;
     height: 84px;
     /* background: url("https://st.quantrimang.com/photos/image/2021/10/25/Background-20-11-5.jpg"); */
-    background: url("https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/67471990_893351187709685_7814867186060623872_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0bb214&_nc_ohc=Pyb_LCPB7ywAX9f3M0o&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfBB5EMgqv-AsWP7wg04L_mADpBlmdlsCh03ETFe2iTviw&oe=656C804F");
+    background: url("thao.jpeg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -207,7 +207,7 @@
       margin: auto;
       z-index: 6;
       opacity: 0;
-      animation: circles 1s 5s ease forwards;
+      animation: circles 10s 5s ease forwards;
     }
 
     @keyframes circles {
@@ -229,8 +229,8 @@
         width: 100%;
         font-size: 12px;
         z-index: 7;
-        background: url("https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/67471990_893351187709685_7814867186060623872_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0bb214&_nc_ohc=Pyb_LCPB7ywAX9f3M0o&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfBB5EMgqv-AsWP7wg04L_mADpBlmdlsCh03ETFe2iTviw&oe=656C804F");
-        background-size: 100%;
+        background: url("thao.jpeg");
+        background-size: 40%;
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
@@ -238,4 +238,102 @@
       }
       .book-first.open{
         display: block;
+      }
+
+       /* emoji top and bottom css */
+
+    .top {
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+      .bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+      }
+
+       /* dancing letter css wiht animation */
+
+    .let {
+        margin-top: 120px;
+        font-size: 10px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        opacity: 0;
+        animation: textview 1s 20s ease forwards;
+      }
+      .happy h1 {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .happy h1 span {
+        color: #262626;
+        background: #fff;
+        padding: 4px 6px;
+        display: table-cell;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 5px 0 #ccc;
+        animation: animate 0.5s infinite;
+      }
+  
+      @keyframes animate {
+        0% {
+          transform: translateY(0px);
+        }
+  
+        50% {
+          transform: translateY(-20px);
+        }
+  
+        100% {
+          transform: translateY(0px);
+        }
+      }
+  
+      h1 span:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+  
+      h1 span:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+  
+      h1 span:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+  
+      h1 span:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+  
+      h1 span:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+  
+      h1 span:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+  
+      h1 span:nth-child(7) {
+        animation-delay: 0.7s;
+      }
+  
+      h1 span:nth-child(8) {
+        animation-delay: 0.8s;
+      }
+  
+      h1 span:nth-child(9) {
+        animation-delay: 0.9s;
+      }
+  
+      h1 span:nth-child(10) {
+        animation-delay: 1s;
+      }
+  
+      @keyframes textview {
+        100% {
+          opacity: 1;
+        }
       }
